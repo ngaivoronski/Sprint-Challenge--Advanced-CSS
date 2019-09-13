@@ -27,6 +27,36 @@
       }
 }
 
+.enlarge-anim(@duration: 0.2s) {
+    animation-name: enlarge;
+    animation-duration: @duration;
+    -webkit-animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.brighten-anim(@duration: 1s) {
+    animation-name: brighten;
+    animation-duration: @duration;
+    -webkit-animation-fill-mode: forwards;
+}
+
+// animations
+
+@keyframes enlarge {
+    0% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(1.2, 1.2);
+    }
+}
+
+@keyframes brighten {
+    100% {
+        color: skyblue;
+    }
+}
+
 //Escaping
 
 @phone: ~'(max-width:500px)';

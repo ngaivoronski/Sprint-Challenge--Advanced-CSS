@@ -4,11 +4,16 @@
     .flex-column();
     align-items: center;
     padding: 1.4em;
-    background-color: #f4f4f4;
+    background-color: rgba(246,246,246,0.75);
     border-bottom: 2px double #e0e0e0;
+    position: fixed;
+    width: 100%;
     h1 {
         font-size: 4rem;
         margin-bottom: .5em;
+        &:hover {
+            .brighten-anim();
+        }
     }
     nav {
         .flex-between();
@@ -19,5 +24,8 @@
         color: @main-font-color;
         font-size: 1.6rem;
         line-height: 1.4rem;
+        &:hover {
+            .enlarge-anim(.2s);
+        }
     }
 }
