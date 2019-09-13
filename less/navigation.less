@@ -1,1 +1,23 @@
 // Navigation code here
+
+.navigation {
+    .flex-column();
+    align-items: center;
+    padding: 1.4em;
+    background-color: #f4f4f4;
+    border-bottom: 2px double #e0e0e0;
+    h1 {
+        font-size: 4rem;
+        margin-bottom: .5em;
+    }
+    nav {
+        .flex-between();
+        width: 400px;
+    }
+    a {
+        text-decoration: none;
+        color: @main-font-color;
+        font-size: 1.6rem;
+        line-height: 1.4rem;
+    }
+}

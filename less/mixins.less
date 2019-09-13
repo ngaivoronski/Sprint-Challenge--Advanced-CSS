@@ -1,1 +1,29 @@
 // Mixins Here
+.flex-column() {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-between() {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.custom-button(@bgcolor: cadetblue, @width:200px, @height:45px, @font-color:white) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: @bgcolor;
+    color: @font-color;
+    width: @width;
+    height: @height;
+    cursor: pointer;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    &:hover{
+        background-color:@font-color;
+        color:@bgcolor;
+      }
+}
+
